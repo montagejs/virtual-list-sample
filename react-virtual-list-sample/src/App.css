@@ -1,0 +1,8 @@
+#container {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.list-group-item:first-of-type {
+    border-top: none;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="list.css">
+    <script type="text/montage-serialization">
+    {
+        "owner": {
+            "values": {
+                "element": {"#": "owner"}
+            }
+        },
+
+        "virtualList": {
+            "prototype": "digit/ui/big-list.reel",
+            "values": {
+                "element": {"#": "virtual-list"},
+                "content": {"<-": "@owner.content"}
+            }
+        },
+
+        "item": {
+            "prototype": "montage/ui/component",
+            "values": {
+                "element": {"#": "item"},
+                "hasTemplate": false,
+                "element.dataset.index": {"<-": "@virtualList:iteration.object"}
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+    <div data-montage-id="owner" class="List">
+        <div data-montage-id="virtual-list" class="virtual-list media-list list-group">
+            <div class="list-group-item">
+                <react-list-item data-montage-id="item"></react-list-item>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

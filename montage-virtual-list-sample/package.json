@@ -1,0 +1,27 @@
+{
+    "name": "montage-list-example",
+    "version": "0.1.0",
+    "dependencies": {
+        "collections": "5.0.6",
+        "create-react-class": "^15.6.0",
+        "document-register-element": "^0.5.0",
+        "digit": "3.0.0",
+        "frb": "4.0.1",
+        "montage": "thibaultzanini/montage#41f5654b05bf98009e2bfe996f2333466bdeeac6",
+        "react": "^15.6.0",
+        "react-dom": "^15.6.0",
+        "reactive-elements": "0.6.7",
+        "weak-map": "1.0.5"
+    },
+    "devDependencies": {
+        "montage-testing": "~0.4.0"
+    },
+    "exclude": [
+        "run-tests.html",
+        "test"
+    ],
+    "bundle": [ "ui/main.reel" ],
+    "scripts": {
+        "start": "minit serve"
+    }
+}

@@ -1,0 +1,15 @@
+h1 {
+    font-weight: bold;
+}
+
+.stats {
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+.stats > div {
+    position: relative !important;
+    right: 0;
+    margin-top: 10px;
+}
