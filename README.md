@@ -6,7 +6,6 @@ npm 3+
 
 ## Get started:
 * `git clone git@github.com:montagejs/virtual-list-sample.git`
-* `cd virtual-list-sample`
 
 
 ## Montage-virtual-list-sample
